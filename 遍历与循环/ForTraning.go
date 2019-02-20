@@ -58,9 +58,20 @@ func testMap()  {
 		fmt.Println(value)
 	}
 }
+
+//for循环可以不需要前置和后置，C语言中的while在Go中也是for
+func testAlone()  {
+	sum := 1
+	for sum < 5 {
+		sum += sum
+	}
+	fmt.Println(sum)
+}
+
 func main()  {
 	testIf(4)
 	testSwitch(5)
 	testFor()
 	testMap()
+	testAlone()
 }
